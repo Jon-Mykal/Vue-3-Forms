@@ -1,11 +1,10 @@
 <template>
-  <label v-if="label">{{ label }}</label>
+      <label>{{label}}</label>
   <input
     v-bind="$attrs"
-    :value="modelValue"
     :placeholder="label"
+    :value="modelValue"
     @input="$emit('update:modelValue', $event.target.value)"
-    class="field"
   >
 </template>
 
