@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Create an event</h1>
-    <form>
+    <form @submit.prevent="sendForm()">
       <BaseSelect :options="categories" v-model="event.category" label="Select a category" />
       <h3>Name & describe your event</h3>
 
@@ -62,6 +62,11 @@ export default {
           music: false
         }
       }
+    }
+  },
+  methods: {
+    sendForm () {
+      console.log(this.event)
     }
   }
 }

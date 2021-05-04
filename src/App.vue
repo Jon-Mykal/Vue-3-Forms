@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <SimpleForm />
+    <AnotherSimpleForm />
   </div>
 </template>
 
 <script>
 import SimpleForm from '@/views/SimpleForm'
+import AnotherSimpleForm from '@/views/AnotherSimpleForm'
 
 export default {
-  components: { SimpleForm }
+  components: { SimpleForm, AnotherSimpleForm }
 }
 </script>
 
